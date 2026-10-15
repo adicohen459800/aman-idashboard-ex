@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="he" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAN - Intelligence Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <!-- אזור מרכזי: סורק ונתונים -->
+        <section class="hero-section">
+            <div class="radar-box">
+                <!-- כאן נשלב את הסורק -->
+                <div class="radar-scanner">
+                    <div class="radar-sweep"></div>
+                    <div class="radar-dot dot-1"></div>
+                    <div class="radar-dot dot-2"></div>
+                    <div class="radar-dot dot-3"></div>
+                </div>
+            </div>
+            <div class="stats-box">
+                <div class="stat-group">
+                    <span class="stat-number">24</span>
+                    <span class="stat-label">ACTIVE SIGNALS</span>
+                </div>
+                <div class="stat-group">
+                    <span class="stat-number accent-num">07</span>
+                    <span class="stat-label">PRIORITY ALERTS</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- שורה של כפתורים -->
+        <section class="actions-section">
+            <button class="action-btn">
+                <img src="img/zap.svg" alt="New Brief" class="icon-img"> New Brief
+            </button>
+            <button class="action-btn">
+                <img src="img/code.svg" alt="Decode" class="icon-img"> Decode
+            </button>
+            <button class="action-btn">
+                <img src="img/rocket.svg" alt="Request Drone" class="icon-img"> Request Drone
+            </button>
+        </section>
+
+        <!-- שורה של כרטיסים -->
+        <section class="cards-section">
+            <!-- כרטיס 1 -->
+            <div class="intel-card border-critical">
+                <div class="card-header">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="card-status">In Progress</span>
+                </div>
+                <div class="card-title">Operation Nightfall</div>
+                <div class="card-progress-container">
+                    <div class="progress-bar" style="width: 65%;"></div>
+                    <span class="progress-text">65%</span>
+                </div>
+            </div>
+
+            <!-- כרטיס 2 -->
+            <div class="intel-card border-warning">
+                <div class="card-header">
+                    <span class="badge warning">WARNING</span>
+                    <span class="card-status">Analyzing</span>
+                </div>
+                <div class="card-title">Signal Intercept Alpha</div>
+                <div class="card-progress-container">
+                    <div class="progress-bar" style="width: 40%;"></div>
+                    <span class="progress-text">40%</span>
+                </div>
+            </div>
+
+            <!-- כרטיס 3 -->
+            <div class="intel-card border-medium">
+                <div class="card-header">
+                    <span class="badge medium">MEDIUM</span>
+                    <span class="card-status">Pending</span>
+                </div>
+                <div class="card-title">Asset Recovery</div>
+                <div class="card-progress-container">
+                    <div class="progress-bar" style="width: 15%;"></div>
+                    <span class="progress-text">15%</span>
+                </div>
+            </div>
+
+            <!-- כרטיס 4 -->
+            <div class="intel-card border-warning">
+                <div class="card-header">
+                    <span class="badge warning">WARNING</span>
+                    <span class="card-status">Active</span>
+                </div>
+                <div class="card-title">Cyber Defense Grid</div>
+                <div class="card-progress-container">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                    <span class="progress-text">90%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- שורת סטאטוס אדומה -->
+        <section class="status-alert-section">
+            <div class="alert-banner">
+                <span class="pulsing-dot"></span>
+                <span class="alert-text">THREAT DETECTED</span>
+            </div>
+        </section>
+
+        <!-- שורת ניווט תחתונה -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active">
+                <img src="img/activity.svg" alt="Dashboard" class="nav-icon-img">
+                <span class="nav-label">Dashboard</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="img/radio.svg" alt="Feed" class="nav-icon-img">
+                <span class="nav-label">Feed</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="img/file-text.svg" alt="Brief" class="nav-icon-img">
+                <span class="nav-label">Brief</span>
+            </a>
+        </nav>
+
+    </div>
+
+</body>
+</html>
